@@ -22,10 +22,18 @@
             <label for="n2" class="form-label">Número 2:</label>
             <input type="number" class="form-control" id="n2" required>
 
-            <button class="btn btn-primary" type="button" onclick="soma()">Somar</button>
-            <button class="btn btn-primary" type="reset">Limpar</button>
+            <div class="mt-3">
+                <button class="btn btn-primary" type="button" onclick="somar()">+</button>
+                <button class="btn btn-primary" type="button" onclick="subtrair()">-</button>
+                <button class="btn btn-primary" type="button" onclick="multiplicar()">*</button>
+                <button class="btn btn-primary" type="button" onclick="dividir()">/</button>
+                <button class="btn btn-primary" type="reset">Limpar</button>
+            </div>
 
-            <div class="resultado"></div>
+            <div class="resultado_somar"></div>
+            <div class="resultado_subtrair"></div>
+            <div class="resultado_multiplicar"></div>
+            <div class="resultado_dividir"></div>
         </form>
     </div>
 
