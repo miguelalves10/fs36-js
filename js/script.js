@@ -3,8 +3,14 @@ const numero2 = (document.getElementById('n2'));
 const conteudo_da_div = document.querySelector('.resultado')
 
 function somar() {
-    let resultado = parseFloat(numero1.value) + parseFloat(numero2.value);
-    mostrar_resultado(resultado)
+    if (numero1.value !== '' && numero2.value !== '') {
+        console.log('somar!');
+        let resultado = parseFloat(numero1.value) + parseFloat(numero2.value);
+        mostrar_resultado(resultado) 
+    } else {
+        console.log('ALERTA! Preencher os campos');
+    }
+    
 }
 
 function subtrair() {
